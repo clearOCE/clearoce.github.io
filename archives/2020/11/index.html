@@ -34,10 +34,10 @@
 
 <script>
     const CONFIG_BGIMAGE = {
-      mode: 'normal',
+      mode: 'random_you',
       normalSrc: '/img/header-bg.jpg',
-      randomYouMax: 110,
-      randomYouSrc: 'https://sariay.github.io/Random-img/',
+      randomYouMax: 21,
+      randomYouSrc: 'https://clearoce.github.io/random-img/',
 	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
 	  preloaderEnable: true
     }
@@ -155,6 +155,10 @@
 	
 
 	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
 </ul>
 	</div>
 	
@@ -228,7 +232,7 @@
 -->
 
 	
-	总计 1 文章
+	总计 2 文章
 	
 
 		</i>
@@ -241,6 +245,18 @@
         
         
         <ul>
+            
+                <li>
+                    <a href="/2020/11/21/this-is-a-test/">
+            			<em year="2020">
+                            11-21
+                        </em>
+        			    <span itemprop="name">
+                            this-is-a-test
+                        </span>
+        			    
+                    </a>
+                </li>
             
                 <li>
                     <a href="/2020/11/21/hello-world/">
@@ -275,6 +291,24 @@
                         2020 - 11
                     </a>
                 </h3>
+            
+
+            <ul>
+                <li>
+                    <a href="/2020/11/21/this-is-a-test/">
+                        <em>
+                            11-21
+                        </em>
+                        <span itemprop="name">
+                            this-is-a-test
+                        </span>
+                               
+                    </a>
+                </li>
+            </ul>
+        
+            
+
             
 
             <ul>
@@ -333,6 +367,10 @@
 		
 	
 
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
 	
 </ul>
 	</div>
@@ -431,6 +469,56 @@
 	
 
   
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
 
 
 
